@@ -9,13 +9,13 @@
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <body>
-
+<br><br><br>
 
 <div class="rotate-links rotator">
     <div class="box-animation">
         <div class="rotate-logo">logo</div>
-        <div class="rotate-search">search for <input></div>
-        <div class="rotate-social">Share on facebook   share on twitter</div>
+        <div class="rotate-search">search for loca<input class="abc" ></div>
+        <div class="rotate-social">Share on facebook share on twitter</div>
     </div>
 </div>
 
@@ -27,19 +27,15 @@
 
 <script>
     $(document).ready(function () {
-        $('.header-action.share').hover(function () {
-                    $('.rotator').addClass('roller');
-                },
-                function () {
-                    $('.rotator').removeClass('roller');
-                });
+        $('.header-action.share').click(function () {
+            $('.rotator').removeClass('roller');
+            $('.rotator').addClass('roller2');
+        });
 
-        $('.header-action.search').hover(function () {
-                    $('.rotator').addClass('roller2');
-                },
-                function () {
-                    $('.rotator').removeClass('roller2');
-                });
+        $('.header-action.search').click(function () {
+            $('.rotator').removeClass('roller2');
+            $('.rotator').addClass('roller');
+        });
     });
 </script>
 </body>
