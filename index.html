@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="all" href="style.css"/>
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+
+
+<div class="rotate-links rotator">
+    <div class="box-animation">
+        <div class="rotate-logo">logo</div>
+        <div class="rotate-search">search for <input></div>
+        <div class="rotate-social">Share on facebook   share on twitter</div>
+    </div>
+</div>
+
+<br><br>
+<br><br>
+
+<div class="header-action share">share</div>
+<div class="header-action search">search</div>
+
+<script>
+    $(document).ready(function () {
+        $('.header-action.share').hover(function () {
+                    $('.rotator').addClass('roller');
+                },
+                function () {
+                    $('.rotator').removeClass('roller');
+                });
+
+        $('.header-action.search').hover(function () {
+                    $('.rotator').addClass('roller2');
+                },
+                function () {
+                    $('.rotator').removeClass('roller2');
+                });
+    });
+</script>
+</body>
+</html>
